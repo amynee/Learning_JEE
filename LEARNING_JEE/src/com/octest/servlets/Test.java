@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.octest.beans.Auteur;
+
 @WebServlet("/Test")
 public class Test extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -20,6 +22,11 @@ public class Test extends HttpServlet {
 		// TODO Auto-generated method stub
 		String message = "Au revoir !";
 		request.setAttribute("variable", message);
+		Auteur auteur = new Auteur();
+		auteur.setPrenom("Amine");
+		auteur.setNom("Tlijani");
+		auteur.setActif(true);
+		request.setAttribute("auteur", auteur);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
 	}
 

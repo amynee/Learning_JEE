@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<%@ include file="menu.jsp" %>
-		<h1>Bonjour !</h1>
+		<h1>Bonjour ${auteur.prenom}!</h1>
+		<p>${auteur.actif ? 'Vous etes très actif !' : 'Vous etes inactif !' }
 	</body>
 </html>
