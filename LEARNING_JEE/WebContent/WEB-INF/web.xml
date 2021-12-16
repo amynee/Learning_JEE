@@ -14,4 +14,13 @@
 		<url-pattern>/bonjour</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>Accueil</servlet-name>
+		<servlet-class>com.octest.servlets.Accueil</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Accueil</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
