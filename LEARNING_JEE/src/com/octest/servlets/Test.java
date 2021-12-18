@@ -27,6 +27,8 @@ public class Test extends HttpServlet {
 		auteur.setNom("Tlijani");
 		auteur.setActif(true);
 		request.setAttribute("auteur", auteur);
+		String[] messages = {"message1", "message2", "message3"};
+		request.setAttribute("messages", messages);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
 	}
 

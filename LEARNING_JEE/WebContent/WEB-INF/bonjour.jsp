@@ -35,5 +35,19 @@
 			<c:when test="${10 < 15}">Second Test</c:when>
 			<c:otherwise>Not found</c:otherwise>
 		</c:choose>
+		
+		<h2>forEach</h2>
+		<c:forEach var="i" begin="0" end="3" step="1">
+			<p>Message <c:out value="${i}"></c:out></p>
+		</c:forEach>
+		
+		<c:forEach var="message" items="${messages}" varStatus="status">
+			<c:out value="N° ${status.count}" /> : <c:out value="${message}" /> 
+		</c:forEach>
+		
+		<h2>forTokens</h2>
+		<c:forTokens var="element" items="first element/second element/third element" delims="/">
+    		<p>${element}</p>
+		</c:forTokens>
 	</body>
 </html>
