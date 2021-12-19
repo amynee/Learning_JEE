@@ -30,5 +30,8 @@
 		<c:if test="${!empty sessionScope.nameWithSession}">
 			<p>Welcome ${sessionScope.nameWithSession} !</p>
 		</c:if>
+		
+		<h2>Use Cookie</h2>
+		<p><c:out value="${getCookieName}" /></p>
 	</body>
 </html>
