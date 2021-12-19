@@ -8,9 +8,9 @@
 	</head>
 	<body>
 		<ul>
-			<li><a href="/LEARNING_JEE">Accueil</a></li>
-			<li><a href="/LEARNING_JEE/bonjour">Bonjour</a></li>
-			<li>Page 3</li>
+			<li><a href="/LEARNING_JEE">Home</a></li>
+			<li><a href="/LEARNING_JEE/bonjour">Welcome</a></li>
+			<li><a href="/LEARNING_JEE/upload-file">upload file</a></li>
 		</ul>
 	</body>
 </html>

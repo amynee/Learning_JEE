@@ -23,6 +23,21 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>UploadFile</servlet-name>
+		<servlet-class>com.octest.servlets.UploadFile</servlet-class>
+		<multipart-config>
+			<location>c:/java-server</location>
+			<max-file-size>10485760</max-file-size>	<!--  10 Mo -->
+			<max-request-size>52428800</max-request-size> <!-- 5 * 10 Mo -->
+			<file-size-threshold>1048576</file-size-threshold> <!-- 1 Mo -->
+		</multipart-config>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadFile</servlet-name>
+		<url-pattern>/upload-file</url-pattern>
+	</servlet-mapping>
+	
 	<jsp-config>
 		<jsp-property-group>
 			<url-pattern>*.jsp</url-pattern>
