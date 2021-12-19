@@ -25,5 +25,10 @@
 			<input type="submit" />
 		</form> 
 		<c:if test="${!empty form.result}"><c:out value="${form.result} !" /></c:if> 
+		
+		<h2>Use Session</h2>
+		<c:if test="${!empty sessionScope.nameWithSession}">
+			<p>Welcome ${sessionScope.nameWithSession} !</p>
+		</c:if>
 	</body>
 </html>

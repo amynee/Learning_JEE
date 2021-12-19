@@ -5,6 +5,7 @@
 		<title>Upload File</title>
 	</head>
 <body>
+	<%@ include file="menu.jsp" %>
 	<c:if test="${!empty file}">
 		<p><c:out value="File ${file} (${description}) is uploaded" /></p>
 	</c:if>
